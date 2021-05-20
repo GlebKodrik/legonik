@@ -1,0 +1,14 @@
+.main{
+  &Messengers{
+    display: flex;
+    &Vk{
+      width: 34px;
+    }
+    a{
+      margin-left: 15px;
+    }
+    a:first-child{
+      margin-left: 0;
+    }
+  }
+}

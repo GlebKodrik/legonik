@@ -1,0 +1,86 @@
+.headerMenu{
+  box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+  background: #FFC42E;
+  width: 100%;
+  height: 50px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1005;
+  margin: 0;
+  padding: 0;
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &Links{
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    li {
+      height: 100%;
+      cursor: pointer;
+      padding: 0 15px;
+
+      a {
+        font-weight: 600;
+        color: #000;
+        height: 100%;
+        line-height: 50px;
+        font-size: 14px;
+        text-decoration: none;
+        display: block;
+        position: relative;
+      }
+    }
+    li:first-child{
+      padding-left: 0;
+    }
+    li:last-child{
+      padding-right: 0;
+    }
+  }
+  &ComeIn{
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    a:hover{
+      color: black;
+    }
+    .item{
+      height: 100%;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      position: relative;
+      padding: 0 15px;
+      cursor: pointer;
+      &Heart{
+        font-size: 20px;
+      }
+      &Login{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+      &:before{
+        content: '';
+        height: 28px;
+        border-left: 1px solid rgba(0, 0, 0, 0.25);
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      &Link{
+        color: #000;
+        font-weight: 600;
+        font-size: 14px;
+        margin-left: 10px;
+      }
+    }
+  }
+}

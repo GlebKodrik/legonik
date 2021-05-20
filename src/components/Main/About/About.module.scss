@@ -1,0 +1,70 @@
+.head{
+  display: flex;
+  margin-bottom: 40px;
+  &Block{
+    width: 50%;
+  }
+  &Title{
+    span{
+      display: block;
+    }
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #000;
+    font-size: 36px;
+    line-height: 40px;
+    text-align: left;
+  }
+  &SubTitle{
+    color: #000;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: left;
+  }
+}
+.info{
+  position: relative;
+  padding: 40px 0;
+  background-color: #0096ff;
+  margin-bottom: 50px;
+  &Text{
+    font-size: 18px;
+    line-height: 22px;
+    text-align: left;
+    max-width: 808px;
+    margin-left: 17%;
+    margin-right: 24px;
+    color: white;
+  }
+  &Img{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 15.033%;
+  }
+}
+
+.years{
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 70px 24px;
+  background-color: #f1f1f1;
+  img {
+    width: 269px;
+  }
+  &Col{
+    max-width: 390px;
+    text-align: center;
+    &:last-child{
+      margin-left: 24px;
+    }
+  }
+  &Desc{
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 21px;
+  }
+}

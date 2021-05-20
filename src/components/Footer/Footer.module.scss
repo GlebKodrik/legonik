@@ -1,0 +1,88 @@
+.subscribe{
+  display: flex;
+  justify-content: center;
+  background: var(--mainColor);
+  padding: 30px 0;
+  &Form{
+    display: flex;
+    align-items: center;
+  }
+  p{
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+}
+.button{
+  margin-left: 20px;
+  width: 200px;
+  background-color: transparent;
+  border: 1px solid #000;
+}
+.content{
+  padding: 20px 0;
+  &Social{
+    .social{
+      &Item{
+        margin-left: 15px;
+      }
+    }
+  }
+  .contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &Phone{
+      display: flex;
+      align-items: center;
+      &Button{
+        background-color: #E1E1E1;
+      }
+      &Button:hover{
+        background-color: black;
+      }
+      &Button:hover a{
+        color: var(--mainColor);
+      }
+      &Sub{
+        font-size: 11px;
+        margin-left: 10px;
+      }
+    }
+
+  }
+}
+.info{
+  border-top: 1px solid #e5e5e5;
+  padding: 20px 0;
+  .payment{
+    display: flex;
+    align-items: center;
+  }
+  .sub{
+    color: #868686;
+    font-size: 11px;
+    line-height: 15px;
+    margin-bottom: 10px;
+  }
+  .buy{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &Logo{
+      .logo{
+        &Img{
+          width: 40px;
+        }
+        &Text{
+          font-weight: 600;
+          color: #000;
+          font-size: 16px;
+          line-height: 1.2em;
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+}

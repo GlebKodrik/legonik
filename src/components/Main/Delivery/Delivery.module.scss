@@ -1,0 +1,58 @@
+.wrap{
+  display: flex;
+  flex-flow: row wrap;
+}
+.item{
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  flex-flow: column nowrap;
+  background: #fff;
+  width: calc(33.33% - 30px);
+  border: 1px solid #e6e6e6;
+  box-shadow: 0 1px 10px #b8b8b8;
+  box-sizing: border-box;
+  position: relative;
+  padding: 55px 20px 35px;
+  margin: 35px 15px;
+  font-size: 16px;
+  &Cost{
+    font-size: 24px;
+    font-weight: bold;
+  }
+  &Content{
+    margin-bottom: 25px;
+  }
+  &Icon{
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%);
+  }
+  &Title{
+    min-height: 18px;
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: 500;
+  }
+  &SubTitle{
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.5em;
+    margin-bottom: 30px;
+  }
+  &Tabl{
+    margin-bottom: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    .tableColumn{
+      width: calc(50% - 10px);
+      margin-right: 20px;
+    }
+    .tableColumnTwo{
+      width: calc(50% - 10px);
+    }
+  }
+}
