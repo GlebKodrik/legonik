@@ -1,0 +1,46 @@
+.topList{
+  display: flex;
+  align-items: center;
+  color: #999;
+  font-size: 14px;
+  margin-bottom: 5px;
+  .lineBlock{
+    width: 250px;
+  }
+  .lineBlockOne{
+    width: 294px;
+  }
+}
+.product{
+  display: flex;
+  align-items: center;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e6e6e6;
+  img{
+    width: 210px;
+    margin-right: 40px;
+  }
+  &Title{
+    width: 280px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  &Price{
+    margin-left: 15px;
+    font-weight: 600;
+    font-size: 20px;
+  }
+}
+.button{
+  padding-top: 20px;
+  text-align: center;
+  button{
+    width: 250px;
+  }
+  &One{
+    background-color: #f1f1f1;
+  }
+  &Two{
+    margin-left: 40px;
+  }
+}

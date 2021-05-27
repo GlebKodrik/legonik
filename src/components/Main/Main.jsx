@@ -11,6 +11,7 @@ import SwiperCore, {
   EffectFade,
   Autoplay,
 } from "swiper";
+import { Categories } from "./Categories/Categories";
 
 SwiperCore.use([Navigation, A11y, Pagination, EffectFade, Autoplay]);
 const pagination = {
@@ -46,6 +47,7 @@ export const Main = () => {
           <img src={slide4} alt="Слайдер" />
         </SwiperSlide>
       </Swiper>
+      <Categories />
     </>
   );
 };

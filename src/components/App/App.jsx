@@ -8,10 +8,25 @@ import "./App.scss";
 import { ScrollToTop } from "../shared/ScrollToTop";
 import { MainRouter } from "../Main/MainRoute";
 import { Registration } from "../Registration/Registration";
+import { useDispatch, useSelector } from "react-redux";
+import { Loader } from "../shared/Loader/Loader";
+import { useEffect } from "react";
+import { initializeApp } from "../../redux/app-reducer";
 
 const { Header, Content, Footer } = Layout;
 
-function App() {
+const App = () => {
+  const dispacth = useDispatch();
+  const initialized = useSelector((state) => state.app.initialized);
+
+  useEffect(() => {
+    dispacth(initializeApp());
+  }, [dispacth]);
+
+  if (!initialized) {
+    return <Loader />;
+  }
+
   return (
     <Route>
       <ScrollToTop />
@@ -32,6 +47,6 @@ function App() {
       </Layout>
     </Route>
   );
-}
+};
 
 export default App;

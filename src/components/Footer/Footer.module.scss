@@ -1,11 +1,11 @@
 .subscribe{
-  display: flex;
-  justify-content: center;
   background: var(--mainColor);
+  text-align: center;
   padding: 30px 0;
   &Form{
     display: flex;
     align-items: center;
+    justify-content: center;
   }
   p{
     font-size: 16px;

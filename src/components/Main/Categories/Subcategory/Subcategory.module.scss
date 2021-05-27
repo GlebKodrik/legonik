@@ -1,0 +1,54 @@
+.title{
+  width: calc(100% - 280px - 10px);
+  margin-right: 10px;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: left;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.cardWrap{
+  display: flex;
+  flex-wrap: wrap;
+}
+.item{
+  text-align: center;
+  background: #fff;
+  width: calc(24.66% - 24px);
+  min-height: 192px;
+  margin: 12px;
+  border: 1px solid #d0d0d0;
+  border-radius: 10px;
+  img{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+  }
+  &Text{
+    font-size: 15px;
+    margin-top: 10px;
+    &Id{
+      color: #828282;
+      font-size: 13px;
+    }
+    &Name{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #000;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      min-height: 43px;
+    }
+    &Cost{
+      color: #000;
+      font-size: 24px;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+    &Button{
+      padding: 10px 66px;
+      margin-bottom: 20px;
+    }
+  }
+}
