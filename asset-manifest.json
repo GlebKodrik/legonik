@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/legonik/static/css/main.c9192ec7.chunk.css",
-    "main.js": "/legonik/static/js/main.ad7ca784.chunk.js",
-    "main.js.map": "/legonik/static/js/main.ad7ca784.chunk.js.map",
+    "main.js": "/legonik/static/js/main.50d2c656.chunk.js",
+    "main.js.map": "/legonik/static/js/main.50d2c656.chunk.js.map",
     "runtime-main.js": "/legonik/static/js/runtime-main.0991e3b4.js",
     "runtime-main.js.map": "/legonik/static/js/runtime-main.0991e3b4.js.map",
     "static/css/2.0ec1425e.chunk.css": "/legonik/static/css/2.0ec1425e.chunk.css",
-    "static/js/2.b6025840.chunk.js": "/legonik/static/js/2.b6025840.chunk.js",
-    "static/js/2.b6025840.chunk.js.map": "/legonik/static/js/2.b6025840.chunk.js.map",
+    "static/js/2.1741986d.chunk.js": "/legonik/static/js/2.1741986d.chunk.js",
+    "static/js/2.1741986d.chunk.js.map": "/legonik/static/js/2.1741986d.chunk.js.map",
     "static/js/3.c820c60b.chunk.js": "/legonik/static/js/3.c820c60b.chunk.js",
     "static/js/3.c820c60b.chunk.js.map": "/legonik/static/js/3.c820c60b.chunk.js.map",
     "index.html": "/legonik/index.html",
     "static/css/2.0ec1425e.chunk.css.map": "/legonik/static/css/2.0ec1425e.chunk.css.map",
     "static/css/main.c9192ec7.chunk.css.map": "/legonik/static/css/main.c9192ec7.chunk.css.map",
-    "static/js/2.b6025840.chunk.js.LICENSE.txt": "/legonik/static/js/2.b6025840.chunk.js.LICENSE.txt",
+    "static/js/2.1741986d.chunk.js.LICENSE.txt": "/legonik/static/js/2.1741986d.chunk.js.LICENSE.txt",
     "static/media/1.765ac8b6.jpg": "/legonik/static/media/1.765ac8b6.jpg",
     "static/media/1.97456251.jpg": "/legonik/static/media/1.97456251.jpg",
     "static/media/1932.1bb2dc8d.png": "/legonik/static/media/1932.1bb2dc8d.png",
@@ -34,8 +34,8 @@
   "entrypoints": [
     "static/js/runtime-main.0991e3b4.js",
     "static/css/2.0ec1425e.chunk.css",
-    "static/js/2.b6025840.chunk.js",
+    "static/js/2.1741986d.chunk.js",
     "static/css/main.c9192ec7.chunk.css",
-    "static/js/main.ad7ca784.chunk.js"
+    "static/js/main.50d2c656.chunk.js"
   ]
 }
