@@ -28,7 +28,7 @@ export const MyModal = ({ product, ...props }) => {
           <div className={s.topList}>
             <div className={s.lineBlock}>Картинка</div>
             <div className={s.lineBlockOne}>Название</div>
-            <div className={s.lineBlockTwo}>Цена</div>
+            <div>Цена</div>
           </div>
           <div className={s.product}>
             <img src={product.img} alt="" />
