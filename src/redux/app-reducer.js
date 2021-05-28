@@ -1,4 +1,9 @@
-import { getCategories } from "./product-reducer";
+import {
+  getBasket,
+  getCategories,
+  getProducstALL,
+  getProducts,
+} from "./product-reducer";
 
 const INITIALIZED_SUCCESS = "app/INITIALIZED_SUCCESS";
 
@@ -23,5 +28,10 @@ export const initializedSuccess = () => ({ type: INITIALIZED_SUCCESS });
 
 export const initializeApp = () => async (dispatch) => {
   await dispatch(getCategories());
-  dispatch(initializedSuccess());
+  await dispatch(getBasket());
+  await dispatch(getProducts());
+  await dispatch(getProducstALL());
+  setTimeout(() => {
+    dispatch(initializedSuccess());
+  }, 1000);
 };

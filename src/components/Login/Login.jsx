@@ -52,9 +52,13 @@ export const Login = () => {
           </Form.Item>
 
           <Form.Item
-            label="Password"
+            label="Пароль"
             name="password"
-            rules={[{ required: true }]}
+            rules={[
+              {
+                required: true,
+              },
+            ]}
           >
             <Input.Password placeholder="Ваш пароль" />
           </Form.Item>

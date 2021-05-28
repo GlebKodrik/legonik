@@ -1,0 +1,108 @@
+.basket{
+  border: 2px solid #e6e6e6;
+  border-radius: 12px;
+  margin-top: 30px;
+  padding: 35px 40px 35px 50px;
+  .price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    font-size: 30px;
+    font-weight: 800;
+    padding-top: 40px;
+    margin-left: auto;
+    margin-bottom: 20px;
+    &Button{
+      text-align: end;
+    }
+    span{
+      font-weight: 600;
+    }
+  }
+  .cartLine{
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #e6e6e6;
+    padding: 20px 0 0 0;
+    color: #919191;
+    font-size: 14px;
+    &Img{
+      width: 302px;
+    }
+    &Name{
+      width: 409px;
+    }
+    &Count{
+      width: 270px;
+    }
+  }
+  &Title{
+    font-size: 36px;
+    color: #1b1b1b;
+    font-weight: 600;
+    margin-bottom: 40px;
+  }
+}
+.item{
+  position: relative;
+  display: flex;
+  align-items: end;
+  padding: 28px 0;
+  border-bottom: 1px solid #e6e6e6;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  &Wrap{
+    display: flex;
+    align-items: center;
+  }
+  &Count{
+    width: 40px;
+    padding: 0 10px;
+  }
+  &Title{
+    max-width: 410px;
+    width: 450px;
+  }
+  &GroupButton{
+    width: 270px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  img{
+    min-height: 100px;
+    max-height: 200px;
+    width: 300px;
+    padding: 0 24px 0 22px;
+  }
+}
+.button{
+  color: #545454;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  border: 0;
+  font-size: 14px;
+  border-radius: 15px;
+  box-shadow: 0 2px 3px #d0d0d0;
+  padding: 6px 20px;
+  display: block;
+  position: absolute;
+  right: 74px;
+  bottom: 30px;
+  &:hover{
+    color: white;
+    background-color: #D11315;
+  }
+}
+.notBasket{
+  font-weight: bold;
+  display: block;
+  color: #000000;
+  font-size: 36px;
+  line-height: 44px;
+}
+.request{
+  text-align: end;
+}

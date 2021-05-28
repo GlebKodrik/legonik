@@ -1,12 +1,8 @@
 import s from "./Subcategory.module.scss";
 import { NavLink } from "react-router-dom";
-import cn from "classnames";
-import { useState } from "react";
-import { MyModal } from "../../../shared/myModal/MyModal";
+import { BuyButton } from "../../../shared/BuyButton/BuyButton";
 
 export const Product = ({ product, ...props }) => {
-  const [isModalVisible, setIsModalVisible] = useState(false);
-
   return (
     <div className={s.item}>
       <NavLink to={"/"}>
@@ -19,13 +15,7 @@ export const Product = ({ product, ...props }) => {
           <div className={s.itemTextCost}>{product.price}&nbsp;₽</div>
         </div>
       </NavLink>
-      <button
-        className={cn("button", s.itemTextButton)}
-        onClick={() => setIsModalVisible(true)}
-      >
-        Купить
-      </button>
-      <MyModal {...{ isModalVisible, setIsModalVisible }} product={product} />
+      <BuyButton product={product} />
     </div>
   );
 };
