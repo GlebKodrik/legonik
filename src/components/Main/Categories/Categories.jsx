@@ -5,7 +5,9 @@ export const Categories = () => {
   const categories = useSelector((state) => state.product.categories);
   return (
     <div className={s.wrap}>
-      <div className="title">Категории</div>
+      <div className="title" id={"extra"}>
+        Категории
+      </div>
       <div className={s.items}>
         {categories.map((el) => {
           return (

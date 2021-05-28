@@ -12,6 +12,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Loader } from "../shared/Loader/Loader";
 import { useEffect } from "react";
 import { initializeApp } from "../../redux/app-reducer";
+import { Goods } from "../Main/Goods/Goods";
 
 const { Header, Content, Footer } = Layout;
 
@@ -38,6 +39,7 @@ const App = () => {
           <Switch>
             <Route path="/registration" render={() => <Registration />} />
             <Route path="/login" render={() => <Login />} />
+            <Route path="/product/:id" render={() => <Goods />} />
             <Route path="/" render={() => <MainRouter />} />
           </Switch>
         </Content>

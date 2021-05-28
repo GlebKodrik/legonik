@@ -1,28 +1,37 @@
 import s from "./Menu.module.scss";
 import { NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
+import { Link } from "react-scroll";
 import cn from "classnames";
 export const Menu = () => {
   const count = useSelector((state) => state.product.basket);
+  const categories = useSelector((state) => state.product.categories);
   return (
     <menu className={s.headerMenu}>
       <div className={"container"}>
         <div className={s.nav}>
           <ul className={s.navLinks}>
+            {categories.map((el, index) => {
+              if (index < 4) {
+                return (
+                  <li key={el.id}>
+                    <NavLink to={`/category/${el.url}`}>{el.name}</NavLink>
+                  </li>
+                );
+              }
+              return;
+            })}
             <li>
-              <NavLink to={""}>Конструкторы</NavLink>
-            </li>
-            <li>
-              <NavLink to={""}>Тачки</NavLink>
-            </li>
-            <li>
-              <NavLink to={""}>STAR WARS</NavLink>
-            </li>
-            <li>
-              <NavLink to={""}>Мягкие игрушки</NavLink>
-            </li>
-            <li>
-              <NavLink to={""}>...Ещё</NavLink>
+              <Link
+                to={"extra"}
+                activeClass={"active"}
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
+              >
+                ...Ещё
+              </Link>
             </li>
           </ul>
           <div className={s.navComeIn}>

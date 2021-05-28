@@ -2,6 +2,8 @@ import { Form, Input, Button, Card } from "antd";
 import s from "./Registration.module.scss";
 import cn from "classnames";
 import { validateMessages } from "../../common/validate";
+import { authAPI } from "../../api/api";
+import { messageError, messageSuccess } from "../../common/sucsess";
 
 const layout = {
   labelCol: {
@@ -28,8 +30,14 @@ export const Registration = () => {
           initialValues={{
             remember: true,
           }}
-          onFinish={(values) => {
-            console.log(values);
+          onFinish={async (values) => {
+            const response = await authAPI.logUp(values);
+            let error = response.data.errors;
+            if (error) {
+              messageError(error.password || error.email);
+              return;
+            }
+            messageSuccess("Вы успешно зарегистрированы!");
           }}
         >
           <Form.Item

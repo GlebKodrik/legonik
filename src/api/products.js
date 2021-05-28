@@ -25,9 +25,18 @@ const products = [
     shortDescr:
       "сталь, толщина стенок - 1.5 мм, 390 мм x 254 мм x 270 мм, вес: 3.3 кг",
     price: 6499,
-    recall: "2",
+    recall: "3",
     categoryId: 2,
     characteristic: "",
+    reviews: [
+      {
+        id: 1,
+        img: "https://sun9-58.userapi.com/impf/1llTa-Y4AXmP0Qu-9bGDvXYdytrAA-1YVDMcQw/zn2deSYNlcs.jpg?size=720x960&quality=96&sign=6f55e5b1548d953d7e94b2c1dc69a41f&type=album",
+        text: "Очень крутой товар",
+        name: "Никита",
+        date: "22.05.2011",
+      },
+    ],
     description:
       "Мангал-книжка TONAR (арт. T-MK-13) выполнен в виде книжки. Подобная конструкция отличается повышенной устойчивостью. В днище имеются вентиляционные отверстия для продува воздуха. Мангал легко складывается, что значительно упрощает и облегчает его транспортировку. Преимущества мангала: Устойчивая конструкция; Отлично держит тепло; Простота конструкции позволяет осуществлять быструю сборку и разборку мангала.",
   },
@@ -38,7 +47,7 @@ const products = [
     shortDescr:
       "сталь, толщина стенок - 1.5 мм, 390 мм x 254 мм x 270 мм, вес: 3.3 кг",
     price: 12999,
-    recall: "2",
+    recall: "5",
     categoryId: 2,
     characteristic: "",
     description:
@@ -54,6 +63,15 @@ const products = [
     recall: "2",
     categoryId: 2,
     characteristic: "",
+    reviews: [
+      {
+        id: 1,
+        img: "https://sun9-58.userapi.com/impf/1llTa-Y4AXmP0Qu-9bGDvXYdytrAA-1YVDMcQw/zn2deSYNlcs.jpg?size=720x960&quality=96&sign=6f55e5b1548d953d7e94b2c1dc69a41f&type=album",
+        text: "Ужасный товар",
+        name: "Никита",
+        date: "20.05.2007",
+      },
+    ],
     description:
       "Мангал-книжка TONAR (арт. T-MK-13) выполнен в виде книжки. Подобная конструкция отличается повышенной устойчивостью. В днище имеются вентиляционные отверстия для продува воздуха. Мангал легко складывается, что значительно упрощает и облегчает его транспортировку. Преимущества мангала: Устойчивая конструкция; Отлично держит тепло; Простота конструкции позволяет осуществлять быструю сборку и разборку мангала.",
   },
@@ -64,7 +82,7 @@ const products = [
     shortDescr:
       "сталь, толщина стенок - 1.5 мм, 390 мм x 254 мм x 270 мм, вес: 3.3 кг",
     price: 10999,
-    recall: "2",
+    recall: "3",
     categoryId: 2,
     characteristic: "",
     description:
@@ -77,9 +95,25 @@ const products = [
     shortDescr:
       "сталь, толщина стенок - 1.5 мм, 390 мм x 254 мм x 270 мм, вес: 3.3 кг",
     price: 1099,
-    recall: "2",
+    recall: "1",
     categoryId: 3,
     characteristic: "",
+    reviews: [
+      {
+        id: 1,
+        img: "https://sun9-58.userapi.com/impf/1llTa-Y4AXmP0Qu-9bGDvXYdytrAA-1YVDMcQw/zn2deSYNlcs.jpg?size=720x960&quality=96&sign=6f55e5b1548d953d7e94b2c1dc69a41f&type=album",
+        text: "Не понравился",
+        name: "Никита",
+        date: "22.05.2011",
+      },
+      {
+        id: 2,
+        img: "https://sun9-54.userapi.com/impg/PEZ064NJzw4N_cVbPi_t8wnp2PDo8QIass2NMQ/pACNqj8EZcc.jpg?size=1215x2160&quality=96&sign=002f47242d403f23c3af7d1473d85053&type=album",
+        text: "Мне все понравилось , не знаю чего жалуется человек с верху",
+        name: "Ира",
+        date: "10.01.2017",
+      },
+    ],
     description:
       "Мангал-книжка TONAR (арт. T-MK-13) выполнен в виде книжки. Подобная конструкция отличается повышенной устойчивостью. В днище имеются вентиляционные отверстия для продува воздуха. Мангал легко складывается, что значительно упрощает и облегчает его транспортировку. Преимущества мангала: Устойчивая конструкция; Отлично держит тепло; Простота конструкции позволяет осуществлять быструю сборку и разборку мангала.",
   },
@@ -90,7 +124,7 @@ const products = [
     shortDescr:
       "сталь, толщина стенок - 1.5 мм, 390 мм x 254 мм x 270 мм, вес: 3.3 кг",
     price: 1599,
-    recall: "2",
+    recall: "4",
     categoryId: 3,
     characteristic: "",
     description:
@@ -103,7 +137,7 @@ const products = [
     shortDescr:
       "сталь, толщина стенок - 1.5 мм, 390 мм x 254 мм x 270 мм, вес: 3.3 кг",
     price: 1699,
-    recall: "2",
+    recall: "3",
     categoryId: 3,
     characteristic: "",
     description:
@@ -129,7 +163,7 @@ const products = [
     shortDescr:
       "сталь, толщина стенок - 1.5 мм, 390 мм x 254 мм x 270 мм, вес: 3.3 кг",
     price: 1099,
-    recall: "2",
+    recall: "5",
     categoryId: 4,
     characteristic: "",
     description:
@@ -142,9 +176,18 @@ const products = [
     shortDescr:
       "сталь, толщина стенок - 1.5 мм, 390 мм x 254 мм x 270 мм, вес: 3.3 кг",
     price: 2099,
-    recall: "2",
+    recall: "0",
     categoryId: 5,
     characteristic: "",
+    reviews: [
+      {
+        id: 2,
+        img: "https://sun9-54.userapi.com/impg/PEZ064NJzw4N_cVbPi_t8wnp2PDo8QIass2NMQ/pACNqj8EZcc.jpg?size=1215x2160&quality=96&sign=002f47242d403f23c3af7d1473d85053&type=album",
+        text: "Развивающий товар",
+        name: "Ира",
+        date: "10.01.2021",
+      },
+    ],
     description:
       "Мангал-книжка TONAR (арт. T-MK-13) выполнен в виде книжки. Подобная конструкция отличается повышенной устойчивостью. В днище имеются вентиляционные отверстия для продува воздуха. Мангал легко складывается, что значительно упрощает и облегчает его транспортировку. Преимущества мангала: Устойчивая конструкция; Отлично держит тепло; Простота конструкции позволяет осуществлять быструю сборку и разборку мангала.",
   },
@@ -168,7 +211,7 @@ const products = [
     shortDescr:
       "сталь, толщина стенок - 1.5 мм, 390 мм x 254 мм x 270 мм, вес: 3.3 кг",
     price: 5099,
-    recall: "2",
+    recall: "1",
     categoryId: 5,
     characteristic: "",
     description:
@@ -194,7 +237,7 @@ const products = [
     shortDescr:
       "сталь, толщина стенок - 1.5 мм, 390 мм x 254 мм x 270 мм, вес: 3.3 кг",
     price: 999,
-    recall: "2",
+    recall: "4",
     categoryId: 5,
     characteristic: "",
     description:

@@ -5,7 +5,7 @@ import { BuyButton } from "../../../shared/BuyButton/BuyButton";
 export const Product = ({ product, ...props }) => {
   return (
     <div className={s.item}>
-      <NavLink to={"/"}>
+      <NavLink to={`/product/${product.id}`}>
         <img src={product.img} alt="" />
         <div className={s.itemText}>
           <div className={s.itemTextId}>

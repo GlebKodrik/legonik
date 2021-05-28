@@ -1,7 +1,11 @@
 import { Form, Input, Button, Checkbox, Card } from "antd";
 import s from "./Login.module.scss";
 import cn from "classnames";
-import { NavLink } from "react-router-dom";
+import { NavLink, useHistory } from "react-router-dom";
+import { authAPI } from "../../api/api";
+import { useDispatch } from "react-redux";
+import { meThunk } from "../../redux/user-reducer";
+import { messageError, success } from "../../common/sucsess";
 const validateMessages = {
   required: "Обязательное поле!",
   types: {
@@ -24,6 +28,8 @@ const tailLayout = {
 };
 
 export const Login = () => {
+  const dispatch = useDispatch();
+  const history = useHistory();
   return (
     <div className={cn("container-small", s.form)}>
       <Card title="Авторизация">
@@ -34,8 +40,14 @@ export const Login = () => {
           initialValues={{
             remember: true,
           }}
-          onFinish={(values) => {
-            console.log(values);
+          onFinish={async (values) => {
+            const response = await authAPI.logIn({ ...values });
+            if (!!response.data.errors) {
+              messageError("Ошибка авторизации!");
+              return;
+            }
+            dispatch(meThunk());
+            history.push("/");
           }}
         >
           <Form.Item

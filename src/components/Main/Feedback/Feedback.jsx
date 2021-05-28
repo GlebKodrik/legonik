@@ -1,8 +1,9 @@
 import React from "react";
 import s from "./Feedback.module.scss";
-import { Form, Input } from "antd";
+import { Form, Input, message } from "antd";
 import { validateName } from "../../../common/validate";
 import cn from "classnames";
+
 const validateMessages = {
   required: "Обязательное поле!",
   types: {
@@ -32,8 +33,12 @@ const textareaLayout = {
   },
 };
 
+const success = () => {
+  message.success("Заявка успешно оставлена!");
+};
 const Feedback = () => {
   const { TextArea } = Input;
+  const [form] = Form.useForm();
   return (
     <>
       <div className={s.text}>
@@ -43,10 +48,12 @@ const Feedback = () => {
       </div>
       <div className={s.form}>
         <Form
+          form={form}
           validateMessages={validateMessages}
           name="login"
           onFinish={(values) => {
-            console.log(values);
+            form.resetFields();
+            success();
           }}
         >
           <Form.Item

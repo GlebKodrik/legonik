@@ -4,6 +4,8 @@ import {
   getProducstALL,
   getProducts,
 } from "./product-reducer";
+import { setInterceptor } from "../api/api";
+import { authThunk } from "./user-reducer";
 
 const INITIALIZED_SUCCESS = "app/INITIALIZED_SUCCESS";
 
@@ -27,6 +29,7 @@ export const appReducer = (state = initialState, action) => {
 export const initializedSuccess = () => ({ type: INITIALIZED_SUCCESS });
 
 export const initializeApp = () => async (dispatch) => {
+  setInterceptor((user) => dispatch(authThunk(user)));
   await dispatch(getCategories());
   await dispatch(getBasket());
   await dispatch(getProducts());
