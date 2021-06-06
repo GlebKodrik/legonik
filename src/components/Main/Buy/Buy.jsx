@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { clearPrice } from "../../../redux/product-reducer";
 import { Button, Form, Input, Modal } from "antd";
 import { validateName, validatePhone } from "../../../common/validate";
+import {sendAPI} from "../../../api/api";
 
 const validateMessages = {
   required: "Обязательное поле!",
@@ -89,6 +90,10 @@ export const Buy = () => {
                       remember: true,
                     }}
                     onFinish={(values) => {
+                      const product = basket.map(el => {
+                        return el.id
+                      })
+                      dispatch(sendAPI.sendEmail({ products: product,...values}));
                       setIsModalVisible(false);
                       success();
                     }}
